@@ -1,0 +1,51 @@
+revision of numpy notes
+
+so what is numpy ?
+this a library that basically run on c for faster calculations 
+and is used in python for matematical calculations
+
+numpy is basically n dimensional array of homogenous data types
+
+so how it is different from list in python
+np array contains homogenous data types
+python list can manage their size dynamically whereas in np array if we 
+change size array delete itself then recreates with new size in memory
+
+way to declare np.array
+
+np.array([]) -1d vector
+np.array([[]])- 2d matrix
+np.array([[[]]])-3d tensor
+
+np.ones((row,column))
+np.zeroes((row,column))
+
+np.identity(shape)
+
+np.arange(lower limit of number, upper limit,step).reshape step is optional
+
+np.linspace(lower limit, upper limit,number) 
+initialize mentioned number of numbers with same distance
+
+np.random.random(row , column)
+initialize tensor with random number between 0-1
+
+=> some other things
+np.arange(1,4).reshape(3,1)
+since there are 3 elements so we can either reshape it into 3,1 or 1,3
+
+ndim - tell about number of dimention of arrya
+
+size - number of elements present
+itemsize - size of element occupying in memory
+
+shape - tell number of rows and column
+
+
+to change of data type we can use dtype after declaration for ex
+np.arange(2,4,dtype='float')
+we cannot change dtype in arange to str 
+in random.random  we cannot change dtype to float directly since it is 
+designed to randomly initialize values between 0-1 
+rather we can change dtype by
+np.random.random(2,4).astype(float)
