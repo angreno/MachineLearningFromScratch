@@ -49,3 +49,53 @@ in random.random  we cannot change dtype to float directly since it is
 designed to randomly initialize values between 0-1 
 rather we can change dtype by
 np.random.random(2,4).astype(float)
+
+
+
+
+
+OPERATIONS ON NP ARRAYS
+
+scaler operations ->we +,*,-,/,== basically perform all arithimatic operations
+or comparison with  arrays with single number.
+
+vector operation -> we do arithimatic or comparison with  on two arrays 
+
+some array operation functions
+
+np.round- gives nearest integer value
+np.max -gives max element 
+np.min - gives min element
+np.prod (a, axis) - 0 for columns 1 for rows
+np.sum(a,axis)
+in all max min prod we can have parameter as axis too
+=>stat functions
+np.mean()
+np.median()
+np.var
+np.std
+
+=> trigo
+np.sin
+np.cos
+
+np.log
+np.floor -> nereast small integer
+np.ceil -> neareast greater integer
+
+
+np.dot -> only when first array column and second array row is same
+
+
+
+Transpose and raval
+a.T - gives transpose of a
+a.raval - make any tensor 1 d
+
+Stack and split
+stack merges whether 
+np.hstack((a,b))
+np.vstack((a,b))
+np.vsplit((a,2))
+np.hsplit((a,number of split we want))
+ 
