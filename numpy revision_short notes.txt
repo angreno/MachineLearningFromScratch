@@ -93,7 +93,8 @@ a.T - gives transpose of a
 a.raval - make any tensor 1 d
 
 Stack and split
-stack merges whether 
+stack merges whether
+split splites.
 np.hstack((a,b))
 np.vstack((a,b))
 np.vsplit((a,2))
